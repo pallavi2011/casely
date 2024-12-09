@@ -25,7 +25,7 @@ import { Button } from '@/components/ui/button'
 import { ArrowRight, Check, ChevronsUpDown } from 'lucide-react'
 import { BASE_PRICE } from '@/config/products'
 import { useUploadThing } from '@/lib/uploadthing'
-import { useToast } from '@/hooks/use-toast';
+import {useToast} from '@/hooks/use-toast';
 import { useMutation } from '@tanstack/react-query'
 import { saveConfig as _saveConfig, SaveConfigArgs } from './actions'
 import { useRouter } from 'next/navigation'
@@ -132,6 +132,7 @@ const DesignConfigurator = ({
 
       await startUpload([file], { configId })
     } catch (err) {
+      console.log(err)
       toast({
         title: 'Something went wrong',
         description:

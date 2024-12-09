@@ -2,7 +2,7 @@ import React from 'react'
 import Wrapper from './Wrapper'
 import Link from 'next/link'
 import { buttonVariants } from '@/components/ui/button'
-import { ArrowBigDown, ArrowRight } from 'lucide-react'
+import {  ArrowRight } from 'lucide-react'
 import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server'
 
 const Navbar = async () => {
